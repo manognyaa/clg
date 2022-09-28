@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+</head>
+
+<body>
+    <div id="nv">
+        <nav>
+            <div class="logo">
+                <img src="./res/images/logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li id="home"><a href="index.html"> <i id="home_icon " class="fa fa-home" style="font-size:30px;" ></i> Home</a></li>
+                <li><a href="#"> <i id="home_icon " class="fa fa-users" style="font-size:25px; margin-right: 5px;" ></i>About US</a></li>
+<!-- 
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+    <section>
+        <img src="res/images/bg.jpg" alt="bg" id="bg">
+        <img src="res/images/moon.png" alt="moon" id="moon">
+        <img src="res/images/mountain.png " alt="mountain" id="mountain">
+        <img src="res/images/road.png" alt="road" id="road">
+        <h2 id="text"> ABOUT US</h2>
+    </section>
+    <div class="team">
+
+        <h1> Our project </h1>
+        <p style="color:white">
+        <br>
+        
+        <br>
+        </p>
+
+<div style="background: ghostwhite; 
+            font-size: 20px; 
+            padding: 40px; 
+            border: 1px solid lightgray; 
+            margin: 30px;">
+
+The research on age estimation based on face recognition has drawn more and more attention these days  because of its wide range of applications. 
+Image processing is the process of transforming an image into a digital format and perform certain operations to get some useful statistics from it. 
+Age detection is the process of automatically discerning the age of a person solely from a photo of their face. Feature extraction from the image plays
+a vital role in age detection. In this web application, we have used convolutional neural networks to detect the age of a person. In the aspect of face 
+feature extraction, this software leverages excellent characteristics of convolution neural network in the field of image application, by using deep
+learning methods to extract facial features. The model performs well in terms of accuracy. 
+<br>
+<br>
+   The software's wide range of applicatios include in visual surveillance, monitoring, banking, public and corporate security.
+   We can use our model in interactive platforms like Omegle where people interact based on their tastes. Using our model we can detect the 
+   current user's age and makes sure he/she joins respective age groups.This project can also be used in implementing attendance systems and particularly
+   useful in finding lost children with the help of their age.
+</div>
+
+
+        <h1> Our Lannisters Team</h1>
+        <div class="imag">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/Manognya Pic.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Manognya Dasika
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/ujawala.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Ujwala Bharati
+                        
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img id="'p2" src="res/images/p2.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Arkha
+                        
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/p3.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Sanjay
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/p4.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Janaki ram
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1.2 + 'px';
+        });
+    </script>
+</body>
+
+</html>
